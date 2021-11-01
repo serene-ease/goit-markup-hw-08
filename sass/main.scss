@@ -1,18 +1,19 @@
 // @import "./base/";
 @import "./base/colors";
 @import "./base/divider";
-
+@import "./base/reset";
 @import "./base/container";
 
 // @import "./utils/";
 @import "./utils/font";
-// @import "";
+@import "./utils/hidden";
 // @import "";
 @import "./components/button";
 // @import "";
 // @import "";
 
-@import "./pages/hero";
+@import "./pages/index-page/hero";
+@import "./pages/index-page/feat";
 // @import "";
 // @import "";
 // @import "";

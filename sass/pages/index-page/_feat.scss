@@ -1,0 +1,120 @@
+.features {
+  padding-top: var(--mobile-divider);
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    padding-bottom: var(--tablet-divider);
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    padding-bottom: var(--desktop-divider);
+  }
+}
+//////////////////////////////////Margins ///////////////////////////////
+.feat__headline::before {
+  margin-bottom: 10px;
+}
+.feat__list.ml- {
+  margin-left: -30px;
+}
+.feat__list.mb- {
+  margin-bottom: -30px;
+}
+.feat_item.ml {
+  margin-left: 30px;
+}
+.feat_item.mb {
+  margin-bottom: 30px;
+}
+/////////////////////////// Close Margins Section ///////////////////
+
+.feat_list {
+  // Mobile
+
+  // flex None
+  // Tablet
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-basis: 100%;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+}
+.feat__item {
+  flex-basis: 100%;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% / 2 - 30px));
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+.feat__description {
+  @include font(14px, 24px);
+  color: var(--secondary-text-color);
+}
+.feat__headline {
+  @include font(14px, 16px, 700);
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  text-align: center;
+
+  position: relative;
+}
+//////////////////////////////////////////////////////////////////
+//////////////////Picture as a 2 pseudo-element's ////////////////
+/////////////////////////////////////////////////////////////////
+
+.feat__headline::before {
+  content: "";
+  display: block;
+  background-color: var(--secondary-background-color);
+  height: 120px;
+  flex-basis: 100%; //Может быть тут следует корректировать учитывая отступы
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.feat__headline::after {
+  content: "";
+
+  position: absolute;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+
+  width: 70px;
+  height: 70px;
+
+  .feat__item:nth-child(1) > & {
+    background-image: url("../images/svg/feats/antenna.svg");
+  }
+  .feat__item:nth-child(2) > & {
+    background-image: url("../images/svg/feats/clock.svg");
+  }
+  .feat__item:nth-child(3) > & {
+    background-image: url("../images/svg/feats/diagram.svg");
+  }
+  .feat__item:nth-child(4) > & {
+    background-image: url("../images/svg/feats/astronaut.svg");
+  }
+}
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////

@@ -9,28 +9,52 @@
 }
 
 :root {
-  --mobile-margin-between-section: 60px;
-  --tablet-margin-between-section: 60px;
-  --desktop-margin-between-section: 94px;
+  --mobile-divider: 60px;
+  --tablet-divider: 60px;
+  --desktop-divider: 94px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 768px;
+    max-width: 480px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container .container {
-    width: 1200px;
-  }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .button {
@@ -129,7 +153,156 @@
   }
 }
 
-.hero > .mb {
+.hero__headline.mb {
   margin-bottom: 30px;
+}
+
+.features {
+  padding-top: var(--mobile-divider);
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding-bottom: var(--tablet-divider);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: var(--desktop-divider);
+  }
+}
+
+.feat__headline::before {
+  margin-bottom: 10px;
+}
+
+.feat__list.ml- {
+  margin-left: -30px;
+}
+
+.feat__list.mb- {
+  margin-bottom: -30px;
+}
+
+.feat_item.ml {
+  margin-left: 30px;
+}
+
+.feat_item.mb {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .feat_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feat_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.feat__item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feat__item {
+    -ms-flex-preferred-size: calc((100% / 2 - 30px));
+        flex-basis: calc((100% / 2 - 30px));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feat__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.feat__description {
+  font-size: 14px;
+  line-height: 1.71429;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-family: Roboto,sans-serif;
+  color: var(--secondary-text-color);
+}
+
+.feat__headline {
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-family: Roboto,sans-serif;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.feat__headline::before {
+  content: "";
+  display: block;
+  background-color: var(--secondary-background-color);
+  height: 120px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feat__headline::before {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feat__headline::before {
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.feat__headline::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  width: 70px;
+  height: 70px;
+}
+
+.feat__item:nth-child(1) > .feat__headline::after {
+  background-image: url("../images/svg/feats/antenna.svg");
+}
+
+.feat__item:nth-child(2) > .feat__headline::after {
+  background-image: url("../images/svg/feats/clock.svg");
+}
+
+.feat__item:nth-child(3) > .feat__headline::after {
+  background-image: url("../images/svg/feats/diagram.svg");
+}
+
+.feat__item:nth-child(4) > .feat__headline::after {
+  background-image: url("../images/svg/feats/astronaut.svg");
 }
 /*# sourceMappingURL=main.css.map */

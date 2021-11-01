@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap"
-        rel="stylesheet">
-    <title>Главная</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="./sass/main.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap"
+    rel="stylesheet">
+  <title>Главная</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./sass/main.css" rel="stylesheet" />
 </head>
+
 <body>
-  <header></header>  
+  <header></header>
   <main>
+    <!-- //////////-- HERO --\\\\\\\\\\\ -->
     <section class="hero">
-        <h1 class="hero__headline mb">Эффективные решения для вашего бизнеса</h1>
-        <button class="button hero_btn" type="button">Заказать услугу</button>
+      <div class="container">
+      <h1 class="hero__headline mb">Эффективные решения для вашего бизнеса</h1>
+      <button class="button hero_btn" type="button">Заказать услугу</button>
+      </div>
     </section>
-    <section class="features"></section>
+    <!-- ////////// FEATURES \\\\\\\\\\\ -->
+    <section class="features">
+      <div class="container">
+        <h2 class="visually-hidden">О нас</h2>
+        <ul class="feat__list mb- ml-">
+          <li class="feat_item mb ml">
+            <h3 class="feat__headline">Внимание к деталям</h3>
+            <p class="feat__description">Идейные соображения, а также начало повседневной работы по формированию
+              позиции.</p>
+          </li>
+          <li class="feat_item mb ml">
+            <h3 class="feat__headline">Пунктуальность</h3>
+            <p class="feat__description">Задача организации, в особенности же рамки и место обучения кадров влечет за
+              собой.</p>
+          </li>
+          <li class="feat_item mb ml">
+            <h3 class="feat__headline">Планирование</h3>
+            <p class="feat__description">Равным образом консультация с широким активом в значительной степени
+              обуславливает.</p>
+          </li>
+          <li class="feat_item mb ml">
+            <h3 class="feat__headline">Современные технологии</h3>
+            <p class="feat__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="team"></section>
     <section class="clients"></section>
   </main>
   <footer></footer>
 </body>
+
 </html>
