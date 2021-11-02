@@ -1,0 +1,28 @@
+.clients {
+  display: flex;
+
+  padding-top: var(--mobile-divider);
+  padding-bottom: var(--mobile-divider);
+  // Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: var(--tablet-divider);
+    padding-bottom: var(--tablet-divider);
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--desktop-divider);
+    padding-bottom: var(--desktop-divider);
+  }
+}
+.clients__svg {
+  color: currentColor;
+  width: 106px;
+  height: 60px;
+}
+.clients__link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}

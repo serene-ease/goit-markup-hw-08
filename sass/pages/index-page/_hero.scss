@@ -5,6 +5,8 @@
   text-align: center;
 
   min-height: 400px;
+  max-width: 1600px;
+  margin: 0 auto;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -93,7 +95,7 @@
     color: var(--third-text-color);
     max-width: 696px;
   }
-  &.mb {
-    margin-bottom: 30px;
-  }
+}
+& {
+  margin-bottom: 30px;
 }

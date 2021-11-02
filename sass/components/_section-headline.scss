@@ -1,0 +1,7 @@
+.section__headline {
+  @include font(36px, 42px, 700);
+  color: var(--primary-text-color);
+
+  text-align: center;
+  margin-bottom: 50px;
+}
