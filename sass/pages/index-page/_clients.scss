@@ -26,3 +26,35 @@
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
+
+.clients__list {
+}
+.clients__list {
+  display: flex;
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.clients__item {
+  flex-basis: calc(100% / 2 - 30px * 2);
+  flex-wrap: wrap;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px * 3);
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px * 6);
+  }
+  &:not(first-child) {
+    margin-left: 30px;
+  }
+}
