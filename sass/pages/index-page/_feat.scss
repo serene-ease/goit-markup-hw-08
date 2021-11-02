@@ -14,6 +14,9 @@
 .feat__headline::before {
   margin-bottom: 30px;
 }
+.feat__headline {
+  margin-bottom: 10px;
+}
 .feat__list {
   margin-left: -30px;
   margin-bottom: -30px;
@@ -22,9 +25,7 @@
   margin-bottom: 30px;
   margin-left: 30px;
 }
-.feat__headline {
-  margin-bottom: 10px;
-}
+
 /////////////////////////// Close Margins Section ///////////////////
 
 .feat__list {
@@ -48,11 +49,11 @@
   width: 100%;
   // Tablet
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 30px * 2);
+    flex-basis: calc(100% / 2 - 30px);
   }
   // Desktop
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - 30px * 4);
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 .feat__description {
@@ -80,11 +81,11 @@
 
   // Tablet
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2);
+    flex-basis: calc(100% / 2 -30px);
   }
   // Desktop
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 4 * 30px) / 4);
+    flex-basis: calc((100% / 4 - 30px));
   }
 }
 
@@ -94,7 +95,7 @@
   // display: block;
   position: absolute;
 
-  left: calc(50% - 70 / 2);
+  left: calc(50% - 70px / 2);
   top: calc(120px / 2 - 70px / 2);
 
   background-size: contain;
