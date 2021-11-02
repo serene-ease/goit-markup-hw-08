@@ -1,0 +1,12 @@
+.logo {
+  @include font(26px, 31px, 700, Raleway);
+  color: var(--accent-color);
+
+  margin-right: 93px;
+}
+.logo__header {
+  color: black;
+}
+.logo__footer {
+  color: white;
+}

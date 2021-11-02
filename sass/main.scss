@@ -7,6 +7,8 @@
 // @import "./utils/";
 @import "./utils/font";
 @import "./utils/hidden";
+@import "./utils/effect";
+@import "./utils/current";
 // @import "";
 @import "./components/button";
 @import "./components/section-headline";
@@ -14,15 +16,17 @@
 // @import "";
 
 // @import "./layout/";
-// @import "";
-// @import "";
+@import "./layout/logo";
+@import "./layout/header";
+@import ".//layout/menu-mobile";
+@import "./layout/footer";
 // @import "";
 
 @import "./pages/index-page/hero";
 @import "./pages/index-page/feat";
 @import "./pages/index-page/team";
 @import "./pages/index-page/clients";
-// @import "";
+@import "./pages/index-page/dirrections";
 // @import "";
 // @import "";
 // @import "";

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./sass/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <nav class="nav">
+            <p class="logo">Web<span class="logo__header">Studio</span></p>
+            <ul class="header__pages">
+                <li class="nav__item1"> <a class="nav__link link effect">Студия</a></li>
+                <li class="nav__item1"> <a class="nav__link link current">Портфолио</a></li>
+                <li class="nav__item1"> <a class="nav__link link effect">Контакты</a></li>
+            </ul>
+            <ul class="header__contacts">
+                <li class="nav__item2"> <a class="nav__contact link effect">+38 096 111 11 11</a></li>
+                <li class="nav__item2"> <a class="nav__contact link effect">info@devstudio.com</a></li>
+            </ul>
+            <!-- ////////////// MOBILE MENU \\\\\\\\\\\\\\\ -->
+            <button class="m-menu__btn effect call js-call-menu" type="button"><svg><use href="./images/svg/sprite.svg#menu_40px"></use></svg></button>
+            
+            <div class="menu__mobile js-menu-container">
+                <ul class="pages">
+                    <li class="mobile__item1"> <a class="mobile__link link effect">Студия</a></li>
+                    <li class="mobile__item1"> <a class="mobile__link link current">Портфолио</a></li>
+                    <li class="mobile__item1"> <a class="mobile__link link effect">Контакты</a></li>
+                </ul>
+                <ul class="contacts">
+                    <li class="mobile__item2"> <a class="mobile__contact link effect">+38 096 111 11 11</a></li>
+                    <li class="mobile__item2"> <a class="mobile__contact link effect">info@devstudio.com</a></li>
+                </ul>
+                <ul class="social">
+                    <li class="social__item"><a class="social__link link" href=""></a></li>
+                    <li class="social__item"><a class="social__link link" href=""></a></li>
+                    <li class="social__item"><a class="social__link link" href=""></a></li>
+                    <li class="social__item"><a class="social__link link" href=""></a></li>
+                </ul>
+            <button class="m-menu__btn effect close js-close-menu" type="button"><svg><use href="./images/svg/sprite.svg#close_40px"></use></svg></button>
+            </div>
+        </nav>
+    </div>
+    </header>
+
+</body>
+</html>
