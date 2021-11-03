@@ -38,21 +38,25 @@
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
 
   // Tablet
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
   }
   // Desktop
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 .clients__list {
-  margin-right: -30px;
   margin-bottom: -30px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    margin-right: -30px; //It's Unudersnadible
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-left: -15px; //It's Unudersnadible
+  }
 }
 .clients__item {
   flex-basis: calc(100% / 2 - 30px);

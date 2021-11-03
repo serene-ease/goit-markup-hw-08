@@ -1,0 +1,101 @@
+.filter {
+  padding-top: var(--mobile-divider);
+  padding-bottom: var(--mobile-divider);
+  // Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: var(--tablet-divider);
+    padding-bottom: var(--tablet-divider);
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--desktop-divider);
+    padding-bottom: var(--desktop-divider);
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  margin-left: -8px;
+}
+.buttons__item {
+  margin-left: 8px;
+}
+.filter__btn {
+  padding: 6px 22px;
+
+  font-family: inherit;
+  @include font(16px, 26px, 500);
+  color: var(--primary-text-color);
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: var(--secondary-background-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--third-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.examples__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 370px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overtext {
+  padding: 63px 24px;
+
+  @include font(18px, 28px);
+  color: var(--primary-text-color);
+  color: #fff;
+
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.examples__item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .overtext {
+    transform: translateY(0);
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.goods {
+  position: relative;
+  overflow: hidden;
+}
+.goods__box2 {
+  padding: 20px 24px;
+  border-inline: #eeeeee solid 1px;
+  border-bottom: #eeeeee solid 1px;
+}
+.goods__header {
+  @include font(18px, 36px, 700, 0.06em);
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+.goods__text {
+  @include font(16px, 30px);
+  color: var(--secondary-text-color);
+}

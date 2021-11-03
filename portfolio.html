@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,48 +14,161 @@
 </head>
 <body>
     
-    <header class="header">
-    <div class="container">
-        <nav class="nav">
-            <p class="logo">Web<span class="logo__header">Studio</span></p>
-            <ul class="header__pages">
-                <li class="nav__item1"> <a class="nav__link link effect" href="./index.html">Студия</a></li>
-                <li class="nav__item1"> <a class="nav__link link current" href="">Портфолио</a></li>
-                <li class="nav__item1"> <a class="nav__link link effect" href="">Контакты</a></li>
+<main>
+    <section class="filter">
+        <div class="container">
+            <h1 class="visually-hidden">Портфолио</h1>
+            <ul class="buttons list">
+                <li class="buttons__item"><button type="button" class="filter__btn">Все</button></li>
+                <li class="buttons__item"><button type="button" class="filter__btn">Веб-сайты</button></li>
+                <li class="buttons__item"><button type="button" class="filter__btn">Приложения</button></li>
+                <li class="buttons__item"><button type="button" class="filter__btn">Дизайн</button></li>
+                <li class="buttons__item"><button type="button" class="filter__btn">Саркетинг</button></li>
             </ul>
-            <ul class="header__contacts">
-                <li class="nav__item2"> <a class="nav__contact link effect">+38 096 111 11 11</a></li>
-                <li class="nav__item2"> <a class="nav__contact link effect">info@devstudio.com</a></li>
+
+            <ul class="examples list">
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <picture>
+                                <source srcset="
+                            ./images/img/portfolio/d-i-1x(1).jpg 1x, 
+                            ./images/img/portfolio/d-i-2x(1).jpg 2x" media="(min-width:1200px)">
+                                <source srcset="
+                            ./images/img/portfolio/t-i-1x(1).jpg 1x,
+                            ./images/img/portfolio/t-i-2x(1).jpg 2x" media="(min-width:768px)">
+                                <source srcset="
+                            ./images/img/portfolio/p-m-1x(1).jpg 1x, 
+                            ./images/img/portfolio/m2x(1).jpg 2x" media="(min-width:320px)">
+                                <img class="team-list__img" src="./images/img/portfolio/p-m-1x(1).jpg" alt="Lorem3" aria-label=" ">
+                            </picture>
+                            <p class="overtext">Технокряк это современная площадка распространения коронавируса.
+                                Компании используют эту платформу
+                                для цифрового
+                                шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Технокряк</h2>
+                            <p class="goods-descr__text">Веб-сайт</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f2.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Постер New Orlean vs Golden Star</h2>
+                            <p class="goods-descr__text">Дизайн</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f3.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime
+                                ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Ресторан Seafood</h2>
+                            <p class="goods-descr__text">Приложение</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f4.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime
+                                ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Проект Prime</h2>
+                            <p class="goods-descr__text">Маркетинг</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f5.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime
+                                ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Проект Boxes</h2>
+                            <p class="goods-descr__text">Приложение</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f6.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime
+                                ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Inspiration has no Borders</h2>
+                            <p class="goods-descr__text">Веб-сайт</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f7.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime
+                                ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Издание Limited Edition</h2>
+                            <p class="goods-descr__text">Дизайн</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f8.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime
+                                ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Проект LAB</h2>
+                            <p class="goods-descr__text">Маркетинг</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="examples__item">
+                    <div class="goods">
+                        <div class="goods__box">
+                            <img src="./images/img/features/f9.jpg" alt="" width="370">
+                            <p class="overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                voluptate delectus maxime
+                                ducimus.</p>
+                        </div>
+                        <div class="goods__box2">
+                            <h2 class="goods-descr__header">Growing Business</h2>
+                            <p class="goods-descr__text">Приложение</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
-                <!-- ////////////// MOBILE MENU \\\\\\\\\\\\\\\ -->
-            <button class="m-menu__btn effect call" type="button"><svg><use href="./images/svg/sprite.svg#menu_40px"></use></svg></button>
-            
-            <div class="menu__mobile is-hidden">
-                <ul class="pages">
-                    <li class="mobile__item1"> <a class="mobile__page link effect">Студия</a></li>
-                    <li class="mobile__item1"> <a class="mobile__page link mobile-current">Портфолио</a></li>
-                    <li class="mobile__item1"> <a class="mobile__page link effect">Контакты</a></li>
-                </ul>
-                <ul class="contacts">
-                    <li class="mobile__item2"> <a class="mobile__contact link effect">+38 096 111 11 11</a></li>
-                    <li class="mobile__item2"> <a class="mobile__contact link effect">info@devstudio.com</a></li>
-                </ul>
-                <ul class="social">
-                    <li class="social__item"><a class="social__link link" href="">Instagram</a></li>
-                    <li class="social__item"><a class="social__link link" href="">Twitter</a></li>
-                    <li class="social__item"><a class="social__link link" href="">Facebook</a></li>
-                    <li class="social__item"><a class="social__link link" href="">LinkedIn</a></li>
-                </ul>
-            <button class="m-menu__btn effect close" type="button"><svg><use href="./images/svg/sprite.svg#close_40px"></use></svg></button>
-            </div>
-        </nav>
-    </div>
-    </header>
+        </div>
+    </section>
+</main>
 
-<footer class="footer">
-    <div class="container">
-
-    </div>
-</footer>
 </body>
 </html>

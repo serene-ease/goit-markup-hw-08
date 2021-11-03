@@ -18,7 +18,15 @@
     text-align: start;
   }
   & .container {
-    display: flex;
+    // Tablet
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    // Desktop
+    @media screen and (min-width: 1200px) {
+      // display: flex;
+    }
+
     // align-items: center;
     // justify-content: center;
   }
