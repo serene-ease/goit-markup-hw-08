@@ -1,6 +1,7 @@
 .soc-box {
   display: flex;
   justify-content: center;
+  margin-left: -10px;
 }
 .soc-box__svg {
   fill: currentColor;
@@ -24,10 +25,16 @@
   &:not(first-child) {
     margin-left: 10px;
   }
+  .footer & {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .footer &:hover,
+  .footer &:focus,
   &:hover,
   &:focus {
     color: var(--third-text-color);
     background-color: var(--accent-color);
-    outline: var(--accent-color);
+    outline: none;
   }
 }
