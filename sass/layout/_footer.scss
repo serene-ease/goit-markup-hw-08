@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--accent-background-color);
+
+  padding-top: var(--mobile-divider);
+  padding-bottom: var(--mobile-divider);
+
+  text-align: center;
+  & .logo {
+    margin: 0 auto;
+    // Tablet
+    @media screen and (min-width: 768px) {
+    }
+    // Desktop
+    @media screen and (min-width: 1200px) {
+    }
+  }
+  & .soc-box__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  // Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: var(--tablet-divider);
+    padding-bottom: var(--tablet-divider);
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--desktop-divider);
+    padding-bottom: var(--desktop-divider);
+  }
+}
+.adress__link {
+  @include font(14px, 24px);
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.form-f__email {
+  display: block;
+  margin: 0 auto;
+}
+.footer__btn {
+}
+
+/////////////////////// Margins //////////////////////

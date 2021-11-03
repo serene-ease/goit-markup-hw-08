@@ -3,5 +3,13 @@
   color: var(--primary-text-color);
 
   text-align: center;
+  ////////////////////
   margin-bottom: 50px;
+}
+.footer__headline {
+  @include font(14px, 16px, 700);
+  color: var(--third-text-color);
+  text-transform: uppercase;
+  ////////////////////
+  margin-bottom: 20px;
 }

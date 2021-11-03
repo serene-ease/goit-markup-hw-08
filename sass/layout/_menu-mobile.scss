@@ -1,15 +1,20 @@
 .menu__mobile {
   padding-top: 48px;
   padding-bottom: 48px;
-  // @media screen and (max-width: 767) {}
+  padding-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   position: absolute;
   background-color: #fff;
   height: 100vh;
   width: 100vw;
   top: 0;
+  z-index: 1;
   // Tablet
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
   // Desktop
@@ -20,11 +25,15 @@
 .m-menu__btn {
   display: none;
 
-  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
   align-items: center;
   background-color: transparent;
   border: none;
   outline: 0px solid transparent;
+
   width: 40px;
   height: 40px;
 
@@ -53,7 +62,41 @@
   }
 }
 
-.mobile__link {
-  @include font(14px, 16px, 500, 0.02em);
+.mobile__page {
+  @include font(40px, 47px, 500, 0.02em);
   color: var(--primary-text-color);
+}
+.mobile__contact {
+  @include font(24px, 28px, 500, 0.02em);
+  color: var(--secondary-text-color);
+
+  &:hover,
+  &:focus {
+    transform: scale(2, 2);
+  }
+}
+.mobile__item2:last-child {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+.social__link {
+  @include font(18px, 22px, 500, 0.02em);
+  color: var(--accent-color);
+
+  margin-left: 20px;
+}
+.social {
+  display: flex;
+  margin-left: -20px;
+}
+.social__item {
+  &::after {
+    content: "";
+    height: 22px;
+    width: 1px;
+    background-color: var(--primary-text-color);
+  }
+}
+.mobile-current {
+  color: var(--accent-color);
 }
