@@ -12,15 +12,16 @@
   height: 100vh;
   width: 100vw;
   top: 0;
+
   z-index: 1;
   // Tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
-  // Desktop
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
+  // // Desktop
+  // @media screen and (min-width: 1200px) {
+  //   display: none;
+  // }
 }
 .m-menu__btn {
   display: none;
@@ -43,23 +44,23 @@
     height: 40px;
   }
   &.call {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 479px) {
       display: flex;
     }
   }
   &.close {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 479px) {
       display: flex;
     }
   }
   // Tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
-  // Desktop
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
+  // // Desktop
+  // @media screen and (min-width: 1200px) {
+  //   display: none;
+  // }
 }
 
 .mobile__page {
@@ -75,9 +76,12 @@
     transform: scale(2, 2);
   }
 }
-.mobile__item2:last-child {
+.mobile__item1:not(last-child),
+.mobile__item2:not(last-child) {
   margin-top: 32px;
-  margin-bottom: 64px;
+}
+.mobile__item2:last-child {
+  margin-bottom: 60px;
 }
 .social__link {
   @include font(18px, 22px, 500, 0.02em);
@@ -89,14 +93,27 @@
   display: flex;
   margin-left: -20px;
 }
-.social__item {
-  &::after {
+.social__item:not(last-child) {
+  position: relative;
+  &:after {
     content: "";
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 0;
     height: 22px;
     width: 1px;
-    background-color: var(--primary-text-color);
+    background-color: rgba(33, 33, 33, 0.2);
   }
 }
 .mobile-current {
   color: var(--accent-color);
+}
+.menu__mobile.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.menu__mobile.is-hidden .menu__mobile {
+  transform: scale(2);
 }

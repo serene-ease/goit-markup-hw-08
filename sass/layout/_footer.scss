@@ -3,9 +3,9 @@
 
   padding-top: var(--mobile-divider);
   padding-bottom: var(--mobile-divider);
-
-  text-align: center;
-
+  @media screen and (max-width: 767 px) {
+    text-align: center;
+  }
   // Tablet
   @media screen and (min-width: 768px) {
     padding-top: var(--tablet-divider);
@@ -15,7 +15,6 @@
   @media screen and (min-width: 1200px) {
     padding-top: var(--desktop-divider);
     padding-bottom: var(--desktop-divider);
-    text-align: start;
   }
   & .container {
     // Tablet
@@ -44,6 +43,9 @@
   // Desktop
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
+  }
+  .adress__item:first-child & {
+    color: white;
   }
 }
 .form-f__email {
@@ -113,7 +115,7 @@
 }
 .box__form {
   // Tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 60px;
   }
   // Desktop

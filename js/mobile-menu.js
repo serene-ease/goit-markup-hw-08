@@ -1,29 +1,14 @@
 (() => {
-  const mobileMenu = document.querySelector(".menu__mobile");
-  const openMenuBtn = document.querySelector(".call");
-  const closeMenuBtn = document.querySelector(".close");
-
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
-    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
-    mobileMenu.classList.toggle("is-open");
-
-    const scrollLockMethod = !isMenuOpen
-      ? "disableBodyScroll"
-      : "enableBodyScroll";
-    bodyScrollLock[scrollLockMethod](document.body);
+  const refs = {
+    openMobileMenuBtn: document.querySelector(".call"),
+    closeMobileMenuBtn: document.querySelector(".close"),
+    modal: document.querySelector(".menu__mobile"),
   };
 
-  openMenuBtn.addEventListener("click", toggleMenu);
-  closeMenuBtn.addEventListener("click", toggleMenu);
+  refs.openMobileMenuBtn.addEventListener("click", toggleMobileMenu);
+  refs.closeMobileMenuBtn.addEventListener("click", toggleMobileMenu);
 
-  // Закрываем мобильное меню на более широких экранах
-  // в случае изменения ориентации устройства.
-  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove("is-open");
-    openMenuBtn.setAttribute("aria-expanded", false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
+  function toggleModal() {
+    refs.MobileMenu.classList.toggle("is-hidden");
+  }
 })();
