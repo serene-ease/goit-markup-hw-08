@@ -62,6 +62,23 @@
     margin-left: 50px;
   }
 }
+.nav__contact {
+  display: flex;
+  align-items: center;
+}
+.svg__envelope,
+.svg__smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.svg__envelope {
+  width: 16px;
+  height: 12px;
+}
+.svg__smartphone {
+  width: 10px;
+  height: 16px;
+}
 /////////////////////Contacts///////////////////////
 .header__contacts {
   // Tablet

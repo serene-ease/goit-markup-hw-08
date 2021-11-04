@@ -25,8 +25,8 @@
           <li class="nav__item1"> <a class="nav__link link effect" href="">Контакты</a></li>
         </ul>
         <ul class="header__contacts list">
-          <li class="nav__item2"> <a class="nav__contact link effect">+38 096 111 11 11</a></li>
-          <li class="nav__item2"> <a class="nav__contact link effect">info@devstudio.com</a></li>
+          <li class="nav__item2"> <a class="nav__contact link effect"><svg class="svg__envelope"><use href="./images/svg/sprite.svg#envelope"></use></svg>+38 096 111 11 11</a></li>
+          <li class="nav__item2"> <a class="nav__contact link effect"><svg class="svg__smartphone"><use href="./images/svg/sprite.svg#smartphone"></use></svg>info@devstudio.com</a></li>
         </ul>
         <!-- ////////////// MOBILE MENU \\\\\\\\\\\\\\\ -->
         <button class="m-menu__btn effect call" type="button"><svg>
@@ -376,14 +376,17 @@
                 <div class="new-user__box">
                   <input class="new-user__input effect__inp" type="text" name="name" id="form-name" required>
                   <label class="new-user__mark" for="form-name">Имя</label>
+                  <span class="svg"><svg class="new-user__svg"><use href="./images/svg/sprite.svg#person"> </use></svg></span>
                 </div>
-                <div class="new-user__box">
+                <div>
                   <input class="new-user__input effect__inp" type="tel" name="tel" id="form-tel">
                   <label class="new-user__mark" for="form-tel" required>Телефон</label>
+                  <span class="svg"><svg class="new-user__svg"><use href="./images/svg/sprite.svg#phone"> </use></svg></span>
                 </div>
-                <div class="new-user__box">
+                <div>
                   <input class="new-user__input effect__inp" type="email" name="email" id="form-email">
                   <label class="new-user__mark" for="form-email">Почта</label>
+                  <span class="svg"><svg class="new-user__svg"><use href="./images/svg/sprite.svg#email"> </use></svg></span>
                 </div>
                 <div class="new-user__box">
                   <textarea class="new-user__input form-comment effect__inp" name="form-comment" id="form-comment" rows="5"
