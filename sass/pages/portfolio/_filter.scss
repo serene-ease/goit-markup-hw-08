@@ -19,6 +19,14 @@
 
   margin-left: -8px;
   padding-bottom: -15px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    // justify-content: center;
+  }
 }
 .buttons__item {
   margin-left: 8px;
@@ -125,13 +133,13 @@
   @include font(18px, 36px, 700, 0.06em);
   color: var(--primary-text-color);
   margin-bottom: 4px;
-  // // Tablet
-  // @media screen and (min-width: 768px) {
-  //   max-width: 306px;
-  // }
-  // // Desktop
-  // @media screen and (min-width: 1200px) {
-  // }
+  // Tablet
+  @media screen and (min-width: 768px) {
+    max-width: 300px;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+  }
 }
 .goods__text {
   @include font(16px, 30px);

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <title>Главная</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -61,7 +61,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero__headline">Эффективные решения для вашего бизнеса</h1>
-        <button class="button hero_btn" type="button">Заказать услугу</button>
+        <button class="button hero__btn" type="button">Заказать услугу</button>
       </div>
     </section>
     <!-- ////////// FEATURES \\\\\\\\\\\ -->
@@ -366,6 +366,40 @@
       </div>
   </footer>
   <!-- /////////-- MODAL Window --\\\\\\\\\\ -->
+          <div class="backdrop">
+            <!--is-hidden -->
+            <div class="modal data-modal-close">
+              <button class="close-btn" type="button"></button>
+          
+              <form class="new-user" action="" method="post" autocomplete="off">
+                <p class="new-user__headline">Оставьте свои данные мы вам перезвоним</p>
+                <div class="new-user__box">
+                  <input class="new-user__input effect__inp" type="text" name="name" id="form-name" required>
+                  <label class="new-user__mark" for="form-name">Имя</label>
+                </div>
+                <div class="new-user__box">
+                  <input class="new-user__input effect__inp" type="tel" name="tel" id="form-tel">
+                  <label class="new-user__mark" for="form-tel" required>Телефон</label>
+                </div>
+                <div class="new-user__box">
+                  <input class="new-user__input effect__inp" type="email" name="email" id="form-email">
+                  <label class="new-user__mark" for="form-email">Почта</label>
+                </div>
+                <div class="new-user__box">
+                  <textarea class="new-user__input form-comment effect__inp" name="form-comment" id="form-comment" rows="5"
+                    placeholder="Введите текст"></textarea>
+                  <label class="new-user__mark" for="form-comment">Комментарий</label>
+                </div>
+                <div class="license">
+                  <input class="license__confirm" name="check" type="checkbox" id="m-form-check">
+                  <label for="license__check" class="license__props">Соглашаюсь с рассылкой и принимаю </label>
+                  <a class="license__descr" href="">Условия договора</a></p>
+                </div>
+                <button type="submit" class="button form__btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+          <script src="./js/modal.js"></script>
 </body>
 
 </html>

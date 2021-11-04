@@ -20,11 +20,11 @@
   & .container {
     // Tablet
     @media screen and (min-width: 768px) {
-      display: flex;
+      // display: flex;
     }
     // Desktop
     @media screen and (min-width: 1200px) {
-      // display: flex;
+      display: flex;
     }
 
     // align-items: center;
@@ -113,7 +113,14 @@
   }
 }
 .box__form {
-  margin-left: auto;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .form__footer {
   // Tablet
