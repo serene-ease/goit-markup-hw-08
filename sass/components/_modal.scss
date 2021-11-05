@@ -173,4 +173,9 @@
     color: var(--accent-color);
     // outline: var(--accent-color);
   }
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+  }
 }

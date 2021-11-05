@@ -7,7 +7,7 @@
     text-align: center;
   }
   // Tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: var(--tablet-divider);
     padding-bottom: var(--tablet-divider);
     text-align: center;
@@ -107,6 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-items: self-start;
   }
   // Desktop
   @media screen and (min-width: 1200px) {
@@ -164,6 +165,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    display: block;
 
     // Tablet
     @media screen and (min-width: 768px) {
