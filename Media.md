@@ -1,8 +1,0 @@
-// Tablet
-@media screen and (min-width: 768px) {
-
-}
-// Desktop
-@media screen and (min-width: 1200px) {
-
-}

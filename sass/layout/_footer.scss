@@ -3,13 +3,14 @@
 
   padding-top: var(--mobile-divider);
   padding-bottom: var(--mobile-divider);
-  @media screen and (max-width: 767 px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
   // Tablet
   @media screen and (min-width: 768px) {
     padding-top: var(--tablet-divider);
     padding-bottom: var(--tablet-divider);
+    text-align: center;
   }
   // Desktop
   @media screen and (min-width: 1200px) {
