@@ -95,12 +95,12 @@
   }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc(100 / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px; /////////////////
   }
   // Desktop
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100 / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px; /////////////////
   }
   &:hover .overtext {
@@ -133,7 +133,6 @@
   margin-bottom: 4px; ///////////////////////
   // Tablet
   @media screen and (min-width: 768px) {
-    max-width: 300px;
   }
   // Desktop
   @media screen and (min-width: 1200px) {

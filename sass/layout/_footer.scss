@@ -30,6 +30,16 @@
     }
   }
 }
+
+.adress__list {
+  // Tablet
+  @media screen and (min-width: 768px) {
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 .adress__link {
   @include font(14px, 24px);
   color: rgba(255, 255, 255, 0.6);
@@ -96,7 +106,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   // Desktop
   @media screen and (min-width: 1200px) {
@@ -109,6 +119,8 @@
   }
   // Desktop
   @media screen and (min-width: 1200px) {
+    text-align: left;
+
     &:last-child {
       margin-left: 70px;
     }

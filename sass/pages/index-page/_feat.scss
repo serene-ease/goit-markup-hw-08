@@ -1,12 +1,17 @@
 .features {
-  padding-top: var(--mobile-divider);
+  @media screen and (max-width: 767px) {
+    padding-top: var(--mobile-divider);
+    padding-bottom: var(--mobile-divider);
+  }
 
   // Tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: var(--tablet-divider);
     padding-bottom: var(--tablet-divider);
   }
   // Desktop
   @media screen and (min-width: 1200px) {
+    padding-top: var(--desktop-divider);
     padding-bottom: var(--desktop-divider);
   }
 }
@@ -80,8 +85,14 @@
   color: var(--primary-text-color);
   text-transform: uppercase;
   text-align: center;
-
   position: relative;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+  }
 }
 //////////////////////////////////////////////////////////////////
 //////////////////Picture as a 2 pseudo-element's ////////////////

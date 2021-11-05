@@ -70,7 +70,18 @@
     margin-left: 50px;
   }
 }
-
+.nav__link {
+  // Tablet
+  @media screen and (min-width: 768px) {
+    @include font(14px, 16px, 500, 0.02em);
+    color: var(--primary-text-color);
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    // @include font(14px, 16px, 500, 0.02em);
+    // color: var(--primary-text-color);
+  }
+}
 /////////////////////Contacts///////////////////////
 
 .svg__envelope,
