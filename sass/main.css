@@ -227,23 +227,12 @@ img {
   padding: 40px;
 }
 
-.new-user svg {
+.new-user__svg {
   width: 18px;
   height: 18px;
   fill: currentColor;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.svg__cross {
-  z-index: 222;
-  height: 18px;
-  fill: cyan;
-  color: chartreuse;
-  outline: red solid 3px;
-}
-
-.new-user__svg {
   position: absolute;
   left: 12px;
   top: 11px;
@@ -436,9 +425,31 @@ img {
   color: var(--accent-color);
 }
 
-.close-btn::after, .close-btn::before {
+.pe__cross {
+  position: relative;
+}
+
+.pe__cross::after, .pe__cross::before {
   content: "";
   display: block;
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: currentColor;
+}
+
+.pe__cross::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.pe__cross::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .backdrop {
@@ -736,7 +747,7 @@ img {
   height: 40px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .m-menu__btn.call {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -744,7 +755,7 @@ img {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .m-menu__btn.close {
     display: -webkit-box;
     display: -ms-flexbox;
