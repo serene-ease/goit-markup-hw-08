@@ -1,11 +1,7 @@
 .menu__mobile {
-  padding-top: 48px;
+  // padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   position: fixed;
   background-color: #fff;
@@ -17,7 +13,7 @@
   z-index: 1;
   // Tablet
   @media screen and (min-width: 768px) {
-    display: none;
+    // display: none;
   }
   // // Desktop
   // @media screen and (min-width: 1200px) {
@@ -26,14 +22,18 @@
   &.is-open {
     transform: translateX(0);
   }
+  & .container {
+    display: flex;
+    height: 100%;
+    min-height: 450px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
 }
 
 .m-menu__btn {
-  display: none;
-
   position: absolute;
-  top: 10px;
-  right: 15px;
 
   align-items: center;
   background-color: transparent;
@@ -51,13 +51,20 @@
   &.call {
     @media screen and (max-width: 767px) {
       display: flex;
+      // left: 425px;
+      right: 15px;
+      top: 15px;
     }
   }
   &.close {
     @media screen and (max-width: 767px) {
       display: flex;
+      // left: 425px;
+      right: 15px;
+      top: 15px;
     }
   }
+
   // Tablet
   @media screen and (min-width: 480px) {
     display: none;
@@ -80,6 +87,9 @@
   &:focus {
     transform: scale(2, 2);
   }
+}
+.mobile__item1:first-child {
+  margin-top: 48px;
 }
 .mobile__item1:not(last-child),
 .mobile__item2:not(last-child) {

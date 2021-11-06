@@ -43,6 +43,7 @@
 .adress__link {
   @include font(14px, 24px);
   color: rgba(255, 255, 255, 0.6);
+  display: block;
   font-style: normal;
   text-decoration: none;
   ///////////////////////

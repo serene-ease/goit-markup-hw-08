@@ -1,10 +1,18 @@
 .section__headline {
   @include font(36px, 42px, 700);
   color: var(--primary-text-color);
-
+  margin-bottom: 30px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    // @include font(28px, 33px, 700);
+    // margin-bottom: 30px;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   text-align: center;
   ////////////////////
-  margin-bottom: 50px;
 }
 .footer__headline {
   @include font(14px, 16px, 700);
