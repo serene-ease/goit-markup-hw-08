@@ -14,8 +14,10 @@
   }
   // Desktop
   @media screen and (min-width: 1200px) {
-    padding-top: var(--desktop-divider);
-    padding-bottom: var(--desktop-divider);
+    padding-top: var(--tablet-divider);
+    padding-bottom: var(--tablet-divider);
+    // padding-top: var(--desktop-divider);
+    // padding-bottom: var(--desktop-divider);
   }
   & .container {
     // Tablet

@@ -1,13 +1,17 @@
 .logo {
-  @include font(26px, 31px, 700, 0.03em, Raleway);
-
   color: var(--accent-color);
+  @media screen and (max-width: 767px) {
+    @include font(24px, 28px, 700, 0.03em, Raleway);
+  }
+
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include font(24px, 28px, 700, 0.03em, Raleway);
     margin-right: 88px;
   }
   // Desktop
   @media screen and (min-width: 1200px) {
+    @include font(26px, 31px, 700, 0.03em, Raleway);
     margin-right: 93px;
   }
 }

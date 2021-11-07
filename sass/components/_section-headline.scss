@@ -1,15 +1,18 @@
 .section__headline {
-  @include font(36px, 42px, 700);
   color: var(--primary-text-color);
+  @media screen and (max-width: 767px) {
+    @include font(28px, 32px, 700);
+  }
   margin-bottom: 30px;
   // Tablet
-  @media screen and (min-width: 768px) {
-    // @include font(28px, 33px, 700);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include font(28px, 32px, 700);
     // margin-bottom: 30px;
   }
   // Desktop
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    @include font(36px, 42px, 700);
   }
   text-align: center;
   ////////////////////
